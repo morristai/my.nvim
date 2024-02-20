@@ -90,7 +90,7 @@ require('lazy').setup({
         dependencies = {
             'nvim-tree/nvim-web-devicons', -- optional, for file icon
         },
-        version = 'nightly'                -- optional, updated every week. (see issue #1193)
+        -- version = 'nightly'                -- optional, updated every week. (see issue #1193)
     },
 
     -- fuzzyf
