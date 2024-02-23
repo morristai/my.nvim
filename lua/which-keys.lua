@@ -70,6 +70,26 @@ wk.register({
     },
 }, { prefix = "<leader>" })
 
+-- hop
+wk.register({
+    H = {
+        name = "Hop",
+        H = { "<cmd>HopWord<CR>", "Hop Word" },
+        F = { "<cmd>HopPattern<CR>", "Hop Pattern" },
+        L = { "<cmd>HopLineStart<CR>", "Hop Line Start" },
+    }
+}, { prefix = "<leader>" })
+
+-- nvim-tmux-navigator
+wk.register({
+  ["<c-h>"] = { "<cmd>TmuxNavigateLeft<cr>", "Navigate Left" }, 
+  ["<c-j>"] = { "<cmd>TmuxNavigateDown<cr>", "Navigate Down" },
+  ["<c-k>"] = { "<cmd>TmuxNavigateUp<cr>", "Navigate Up" },
+  ["<c-l>"] = { "<cmd>TmuxNavigateRight<cr>", "Navigate Right" },
+  ["<c-\\>"] = { "<cmd>TmuxNavigatePrevious<cr>", "Navigate Previous" },
+})
+
 -- misc
 -- toggle term
 vim.keymap.set({ 'n', 't' }, '<A-j>', '<cmd>Lspsaga term_toggle<CR>', bufopts)
+

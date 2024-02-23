@@ -33,6 +33,7 @@ require('which-keys')
 
 vim.cmd 'set clipboard=unnamedplus'
 vim.cmd 'colorscheme gruvbox'
+vim.cmd 'highlight Normal guibg=#130F0F' 
 
 -- auto format
 -- vim.api.nvim_create_augroup('AutoFormatting', {})

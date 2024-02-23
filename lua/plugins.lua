@@ -118,6 +118,11 @@ require('lazy').setup({
         "akinsho/toggleterm.nvim"
     },
 
+    -- vim-tmux-nagviator
+    {
+        "christoomey/vim-tmux-navigator"
+    },
+
     -- autopairs
     {
         'windwp/nvim-autopairs',
