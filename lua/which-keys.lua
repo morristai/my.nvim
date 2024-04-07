@@ -81,11 +81,18 @@ wk.register({
 }, { prefix = "<leader>" })
 
 -- nvim-tmux-navigator
+-- wk.register({
+--   ["<c-h>"] = { "<cmd>TmuxNavigateLeft<cr>", "Navigate Left" }, 
+--   ["<c-j>"] = { "<cmd>TmuxNavigateDown<cr>", "Navigate Down" },
+--   ["<c-k>"] = { "<cmd>TmuxNavigateUp<cr>", "Navigate Up" },
+--   ["<c-l>"] = { "<cmd>TmuxNavigateRight<cr>", "Navigate Right" },
+--   ["<c-\\>"] = { "<cmd>TmuxNavigatePrevious<cr>", "Navigate Previous" },
+-- })
 wk.register({
-  ["<c-h>"] = { "<cmd>TmuxNavigateLeft<cr>", "Navigate Left" }, 
-  ["<c-j>"] = { "<cmd>TmuxNavigateDown<cr>", "Navigate Down" },
-  ["<c-k>"] = { "<cmd>TmuxNavigateUp<cr>", "Navigate Up" },
-  ["<c-l>"] = { "<cmd>TmuxNavigateRight<cr>", "Navigate Right" },
+  ["<D-A-Left>"] = { "<cmd>TmuxNavigateLeft<cr>", "Navigate Left" }, 
+  ["<D-A-Down>"] = { "<cmd>TmuxNavigateDown<cr>", "Navigate Down" },
+  ["<D-A-Up>"] = { "<cmd>TmuxNavigateUp<cr>", "Navigate Up" },
+  ["<D-A-Right>"] = { "<cmd>TmuxNavigateRight<cr>", "Navigate Right" },
   ["<c-\\>"] = { "<cmd>TmuxNavigatePrevious<cr>", "Navigate Previous" },
 })
 

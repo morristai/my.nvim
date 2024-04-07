@@ -33,7 +33,8 @@ require('lazy').setup({
     'Mofiqul/vscode.nvim',
     'plan9-for-vimspace/acme-colors',
     'Ji-Xinyou/vim-256noir',
-    'wadackel/vim-dogrun',
+    -- 'wadackel/vim-dogrun',
+    'nvim-neotest/nvim-nio',
     'oxfist/night-owl.nvim',
 
     -- Post-install/update hook with neovim command
