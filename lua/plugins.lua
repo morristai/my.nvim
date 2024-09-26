@@ -33,7 +33,8 @@ require('lazy').setup({
     'Mofiqul/vscode.nvim',
     'plan9-for-vimspace/acme-colors',
     'Ji-Xinyou/vim-256noir',
-    'wadackel/vim-dogrun',
+    -- 'wadackel/vim-dogrun',
+    'nvim-neotest/nvim-nio',
     'oxfist/night-owl.nvim',
 
     -- Post-install/update hook with neovim command
@@ -90,7 +91,7 @@ require('lazy').setup({
         dependencies = {
             'nvim-tree/nvim-web-devicons', -- optional, for file icon
         },
-        version = 'nightly'                -- optional, updated every week. (see issue #1193)
+        -- version = 'nightly'                -- optional, updated every week. (see issue #1193)
     },
 
     -- fuzzyf
@@ -116,6 +117,11 @@ require('lazy').setup({
     -- toggleterm
     {
         "akinsho/toggleterm.nvim"
+    },
+
+    -- vim-tmux-nagviator
+    {
+        "christoomey/vim-tmux-navigator"
     },
 
     -- autopairs
