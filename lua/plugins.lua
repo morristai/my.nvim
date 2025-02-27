@@ -89,8 +89,7 @@ require('lazy').setup({
         'nvim-tree/nvim-tree.lua',
         dependencies = {
             'nvim-tree/nvim-web-devicons', -- optional, for file icon
-        },
-        version = 'nightly'                -- optional, updated every week. (see issue #1193)
+        }
     },
 
     -- fuzzyf
@@ -157,7 +156,7 @@ require('lazy').setup({
     -- debugging
     'mfussenegger/nvim-dap',
 
-    { "rcarriga/nvim-dap-ui", dependencies = { "mfussenegger/nvim-dap" } },
+    { "rcarriga/nvim-dap-ui", dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" } },
 
     'simrat39/rust-tools.nvim',
 

@@ -50,7 +50,7 @@ require('material').setup({
 -- catppuccin
 local catppuccin = require("catppuccin")
 catppuccin.setup {
-    flavour = "mocha", -- latte, frappe, macchiato, mocha
+    flavour = "macchiato", -- latte, frappe, macchiato, mocha
     term_colors = true,
     transparent_background = false,
     no_italic = false,

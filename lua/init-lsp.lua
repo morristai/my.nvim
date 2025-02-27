@@ -30,7 +30,7 @@ lspconfig.pyright.setup {
     on_attach = on_attach,
     capabilities = capabilities,
 }
-lspconfig.tsserver.setup {
+lspconfig.ts_ls.setup {
     on_attach = on_attach,
     capabilities = capabilities,
 }
