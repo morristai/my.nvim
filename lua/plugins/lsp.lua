@@ -70,18 +70,4 @@ return {
     },
   },
 
-  -- Rust-specific LSP keybindings (on top of LazyVim defaults)
-  {
-    "neovim/nvim-lspconfig",
-    opts = function()
-      local keys = require("lazyvim.plugins.lsp.keymaps").get()
-      -- These are additional to LazyVim defaults (gd, gr, K, etc.)
-      vim.list_extend(keys, {
-        { "<leader>ca", vim.lsp.buf.code_action, desc = "Code action" },
-        { "<leader>cr", vim.lsp.buf.rename, desc = "Rename symbol" },
-        { "K", vim.lsp.buf.hover, desc = "Hover documentation" },
-        { "<leader>cl", "<cmd>LspInfo<cr>", desc = "LSP info" },
-      })
-    end,
-  },
 }

@@ -63,6 +63,28 @@ return {
     end,
   },
 
+  -- snacks.nvim: override explorer sidebar width (LazyVim default file explorer)
+  {
+    "folke/snacks.nvim",
+    opts = {
+      explorer = {
+        replace_netrw = true,
+      },
+      picker = {
+        sources = {
+          explorer = {
+            layout = {
+              layout = {
+                width = 25,
+                min_width = 25,
+              },
+            },
+          },
+        },
+      },
+    },
+  },
+
   -- which-key: displays available keybindings in a popup
   {
     "folke/which-key.nvim",
@@ -91,7 +113,7 @@ return {
     opts = {
       outline_window = {
         position = "right",
-        width = 30,
+        width = 25,
         auto_close = false,
       },
       symbols = {

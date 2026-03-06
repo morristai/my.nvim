@@ -16,6 +16,42 @@ Leader key: **Space**
 | `<Space>Q` | n | Quit all (confirm) |
 | `<Esc>` | n | Clear search highlight |
 
+## File Explorer (neo-tree)
+
+| Key | Mode | Action |
+|-----|------|--------|
+| `<Space>e` | n | Toggle file explorer (root dir) |
+| `<Space>E` | n | Toggle file explorer (cwd) |
+
+**Inside the explorer tree:**
+
+| Key | Action |
+|-----|--------|
+| `a` | Add file/directory (end name with `/` for directory) |
+| `d` | Delete file |
+| `r` | Rename file |
+| `c` | Copy file |
+| `m` | Move file |
+| `y` | Copy file name |
+| `Y` | Copy relative path |
+| `p` | Paste file |
+| `/` | Filter / search |
+| `<CR>` | Open file |
+| `s` | Open in vertical split |
+| `S` | Open in horizontal split |
+| `H` | Toggle hidden files |
+| `R` | Refresh tree |
+| `?` | Show all neo-tree keybindings |
+
+## Session (persistence.nvim)
+
+| Key | Mode | Action |
+|-----|------|--------|
+| `<Space>qs` | n | Restore session for current directory |
+| `<Space>qS` | n | Select a session to restore |
+| `<Space>ql` | n | Restore last session (any directory) |
+| `<Space>qd` | n | Stop auto-saving for this session |
+
 ## Navigation & Motions
 
 | Key | Mode | Action |
