@@ -62,6 +62,15 @@ autocmd("FileType", {
   end,
 })
 
+-- Clear winfixbuf before opening man pages to prevent E1513
+autocmd("FileType", {
+  group = augroup("man_winfixbuf", { clear = true }),
+  pattern = "man",
+  callback = function()
+    vim.wo.winfixbuf = false
+  end,
+})
+
 -- Auto-create parent directories when saving a file
 autocmd("BufWritePre", {
   group = augroup("auto_create_dir", { clear = true }),

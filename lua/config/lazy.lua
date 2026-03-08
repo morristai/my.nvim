@@ -34,7 +34,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.toml" },
     { import = "lazyvim.plugins.extras.test.core" },
     { import = "lazyvim.plugins.extras.dap.core" },
-    { import = "lazyvim.plugins.extras.editor.outline" },
+    { import = "lazyvim.plugins.extras.editor.aerial" },
     -- 3. Custom plugin modules (last, so they can override extras)
     { import = "plugins" },
   },

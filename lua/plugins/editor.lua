@@ -104,32 +104,29 @@ return {
     },
   },
 
-  -- outline.nvim: code symbol tree sidebar
+  -- aerial.nvim: code symbol tree sidebar
   {
-    "hedyhli/outline.nvim",
+    "stevearc/aerial.nvim",
     keys = {
-      { "<leader>co", "<cmd>Outline<cr>", desc = "Toggle outline" },
+      { "<leader>co", "<cmd>AerialToggle<cr>", desc = "Toggle outline (Aerial)" },
     },
     opts = {
-      outline_window = {
-        position = "right",
+      layout = {
+        default_direction = "right",
         width = 25,
-        auto_close = false,
       },
-      symbols = {
-        -- Focus on Rust-relevant symbols
-        filter = {
-          rust = {
-            "Function",
-            "Method",
-            "Struct",
-            "Enum",
-            "Interface",
-            "Module",
-            "Constant",
-            "Field",
-            "Property",
-          },
+      close_on_select = false,
+      filter_kind = {
+        rust = {
+          "Function",
+          "Method",
+          "Struct",
+          "Enum",
+          "Interface",
+          "Module",
+          "Constant",
+          "Field",
+          "Property",
         },
       },
     },

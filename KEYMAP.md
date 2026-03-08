@@ -57,6 +57,8 @@ Leader key: **Space**
 | Key | Mode | Action |
 |-----|------|--------|
 | `j` / `k` | n, x | Move down/up (respects line wrapping) |
+| `<C-o>` | n | Jump back (previous position) |
+| `<C-i>` | n | Jump forward |
 | `n` | n | Next search result (centered) |
 | `N` | n | Previous search result (centered) |
 | `<C-d>` | n | Scroll half-page down (centered) |
@@ -249,7 +251,8 @@ Leader key: **Space**
 
 | Key | Mode | Action |
 |-----|------|--------|
-| `<C-y>` | i | Accept Copilot suggestion |
+| `<C-a>` | i | Accept Copilot suggestion |
+| `<C-w>` | i | Accept Copilot word |
 | `<C-]>` | i | Next Copilot suggestion |
 | `<C-[>` | i | Previous Copilot suggestion |
 | `<C-\>` | i | Dismiss Copilot suggestion |
@@ -258,6 +261,7 @@ Leader key: **Space**
 
 | Key | Mode | Action |
 |-----|------|--------|
+| `<C-/>` | n | Toggle floating terminal (LazyVim default) |
 | `<Esc><Esc>` | t | Exit terminal mode |
 
 ## Utility Windows
